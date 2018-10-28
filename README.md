@@ -15,7 +15,6 @@ Server:
 
 1. Place server directory on your server at desired location.
 2. Enter uploaded server directory and execute `npm run install` and then `node http.js` for http or `node https.js` for https. Remember to change any applicable settings in settings.json.
-※ To stop: `npm run stop`
 
 ## Usage
 
