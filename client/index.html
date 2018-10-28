@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Web Socket tester</title>
+        <script src="./scripts.js"></script>
+        <style rel="stylesheet" href="./style.css"></style>
+    </head>
+    <body>
+        <h1>Web Socket tester</h1>
+        <div>
+            <h2>Connection</h2>
+            <span>
+                <span>Protocol:</span>
+                <select id="protocol">
+                    <option value="ws">ws</option>
+                    <option value="wss">wss</option>
+                </select><br>
+            </span>
+            <span>
+                <span>URL:</span>
+                <input id="url" type="text">
+                <input id="connect" type="button" value="Connect(disconnects existing)">
+                <input id="disconnect" type="button" value="Disconnect"><br>
+            </span>
+            <span>
+                <span>Connected to:</span>
+                <span id="connected-to"></span>
+            </span>
+        </div>
+        <div>
+            <h2>Send data</h2>
+            <span>
+                <span>Data:</span><br>
+                <textarea id="data"></textarea><br>
+                <input id="send" type="button" value="Send">
+            </span>
+        </div>
+        <div>
+            <h2>Response</h2>
+            <div id="response">
+                <!-- RESPONSES ADDED HERE -->
+            </div>
+        </div>
+    </body>
+</html>

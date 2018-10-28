@@ -1,0 +1,15 @@
+{
+  "name": "websocket-client-server-tester",
+  "version": "1.0.0",
+  "description": "Simple project for testing ability of browser client to communicate with server using web sockets.",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server"
+  },
+  "keywords": [],
+  "author": "Damien Golding",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
