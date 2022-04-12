@@ -1,0 +1,13 @@
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+input, textarea, button, select {
+    margin: 10px 10px;
+}
+
+section {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}

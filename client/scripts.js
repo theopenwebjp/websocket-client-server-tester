@@ -1,6 +1,9 @@
 window.addEventListener('load', onLoad)
 
 const state = {
+  /**
+   * @type {WebSocket|null}
+   */
   connection: null
 }
 
@@ -9,6 +12,9 @@ function onLoad () {
   el('#send').addEventListener('click', send)
 }
 
+/**
+ * @param {string} message 
+ */
 function output (message) {
   const row = document.createElement('div')
   row.textContent = message
@@ -45,10 +51,16 @@ function send () {
   }
 }
 
+/**
+ * @param {string} url 
+ */
 function updateConnectedTo (url) {
   el('#connected-to').value = url
 }
 
+/**
+ * @param {WebSocket} connection 
+ */
 function setupConnectionObject (connection) {
   connection.onmessage = (event) => {
     output(`onmessage: ${event.data}`)
@@ -71,6 +83,9 @@ function setupConnectionObject (connection) {
   }
 }
 
+/**
+ * @param {string} selector
+ */
 function el (selector) {
   return document.querySelector(selector)
 }

@@ -1,9 +1,9 @@
 {
     "http": {
-        "port": 8080
+        "port": 80
     },
     "https": {
-        "port": 8080,
+        "port": 443,
         "cert": "/path/to/cert.pem",
         "key": "/path/to/key.pem"
     }

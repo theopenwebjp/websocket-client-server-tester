@@ -7,9 +7,9 @@ The purpose of this project is for testing if the client supports Web Sockets an
 
 Client:
 
-1. Install: `npm run install`
-2. Setup localhost: `npm run localhost`
-3. Open link at location shown in shell.
+1. Install: `npm install`
+2. Setup localhost: `npm run localhost`.
+3. Open link at location shown in shell. Opens client page.
 
 Server:
 
@@ -18,16 +18,18 @@ Server:
 
 ## Usage
 
-※ If you want to test on localhost, url is: [LOCALHOST_URL]/server  
+※ Server URL is localhost:[PORT] where the port is usually 80, 443 for http, https respectively.
 Input server url and then click connect.  
 Once connected, it is possible to send data and receive responses.
+
+For https, make sure to set the certificate info in settings to your https config information.
 
 ## nginx config
 
 nginx example config:
 Make sure to change [IP AND PORT OF SERVER]
 
-```
+```nginx
 # Outside of server
 map $http_upgrade $connection_upgrade {
     default upgrade;
@@ -50,4 +52,6 @@ location /websocket {
 
 This project only uses Node.js for the server.
 The reason for this is a web socket requires setting up a process that listens for incoming messages so a shared server that usually only supports PHP would probably be difficult to setup making Node.js just as easy to setup as anything else.
-Please setup your own web socket server code if using another environment. For example in PHP: http://socketo.me
+Please setup your own web socket server code if using another environment. For example in PHP: [http://socketo.me](socketo.me)
+
+Server is separate package, but SHOULD NOT be package controlled, so uses "private = true".

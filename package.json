@@ -4,12 +4,13 @@
   "description": "Simple project for testing ability of browser client to communicate with server using web sockets.",
   "main": "index.js",
   "scripts": {
-    "server": "http-server"
+    "localhost": "http-server ./client/"
   },
-  "keywords": [],
+  "keywords": ["webpack", "client", "server"],
   "author": "Damien Golding",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.11.1"
-  }
+    "http-server": "^14.1.0"
+  },
+  "private": false
 }

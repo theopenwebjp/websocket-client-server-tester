@@ -1,12 +1,13 @@
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Web Socket tester</title>
         <script src="./scripts.js"></script>
-        <style rel="stylesheet" href="./style.css"></style>
+        <link rel="stylesheet" href="./style.css"></link>
     </head>
     <body>
         <h1>Web Socket tester</h1>
-        <div>
+        <section>
             <h2>Connection</h2>
             <span>
                 <span>Protocol:</span>
@@ -16,8 +17,8 @@
                 </select><br>
             </span>
             <span>
-                <span>URL:</span>
-                <input id="url" type="text">
+                <span>URL(Without protocol):</span>
+                <input id="url" type="text" value="localhost:80">
                 <input id="connect" type="button" value="Connect(disconnects existing)">
                 <input id="disconnect" type="button" value="Disconnect"><br>
             </span>
@@ -25,20 +26,20 @@
                 <span>Connected to:</span>
                 <span id="connected-to"></span>
             </span>
-        </div>
-        <div>
+        </section>
+        <section>
             <h2>Send data</h2>
             <span>
                 <span>Data:</span><br>
-                <textarea id="data"></textarea><br>
+                <textarea id="data">Test Data</textarea><br>
                 <input id="send" type="button" value="Send">
             </span>
-        </div>
-        <div>
+        </section>
+        <section>
             <h2>Response</h2>
             <div id="response">
                 <!-- RESPONSES ADDED HERE -->
             </div>
-        </div>
+        </section>
     </body>
 </html>
