@@ -5,6 +5,10 @@ The purpose of this project is for testing if the client supports Web Sockets an
 
 ## Setup
 
+```bash
+npm install @theopenweb/websocket-client-server-tester
+```
+
 Client:
 
 1. Install: `npm install`

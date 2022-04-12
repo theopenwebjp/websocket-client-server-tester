@@ -1,16 +1,27 @@
 {
-  "name": "websocket-client-server-tester",
+  "name": "@theopenweb/websocket-client-server-tester",
   "version": "1.0.0",
   "description": "Simple project for testing ability of browser client to communicate with server using web sockets.",
   "main": "index.js",
   "scripts": {
     "localhost": "http-server ./client/"
   },
-  "keywords": ["webpack", "client", "server"],
-  "author": "Damien Golding",
+  "keywords": ["webpack", "client", "server", "tester", "port"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theopenwebjp/websocket-client-server-tester.git"
+  },
+  "author": "The Open Web <noreply@theopenweb.jp> (https://theopenweb.jp)",
+  "contributors": [
+    "Damien Golding <noreply@damiengolding.com> (https://damiengolding.com)"
+  ],
+  "homepage": "https://theopenweb.info",
+  "bugs": {
+    "url": "https://github.com/theopenwebjp/websocket-client-server-tester/issues"
+  },
+  "private": false,
   "license": "MIT",
   "devDependencies": {
     "http-server": "^14.1.0"
-  },
-  "private": false
+  }
 }
